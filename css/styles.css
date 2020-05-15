@@ -2,3 +2,29 @@
     margin: 0;
     padding: 0;
 }
+header{
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    background:#14d1ba;
+}
+header nav{
+    line-height: 3em;
+}
+header nav a{
+    display:inline-block;
+    text-decoration:none;
+    color: white;
+    padding:10px 2%;
+    font-weight: bold;
+    font-size: 20px;
+}
+header nav a:hover{
+    color:#14d1ba;
+    background: white;
+    font-weight: bold;
+    background:#142323;
+}
+header nav [input:search]{
+
+}
