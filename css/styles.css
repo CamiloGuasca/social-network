@@ -2,29 +2,84 @@
     margin: 0;
     padding: 0;
 }
-header{
-    width: 100%;
-    position: fixed;
-    overflow: hidden;
-    background:#14d1ba;
-}
-header nav{
-    line-height: 3em;
-}
-header nav a{
-    display:inline-block;
-    text-decoration:none;
-    color: white;
-    padding:10px 2%;
-    font-weight: bold;
-    font-size: 20px;
-}
-header nav a:hover{
-    color:#14d1ba;
-    background: white;
-    font-weight: bold;
-    background:#142323;
-}
-header nav [input:search]{
 
+html {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    /* position: fixed; */
+    /* overflow: hidden; */
+    background:#14d1ba;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.search-bar {
+    padding: 12px;
+    width: 50vw;
+    margin: 0 10vw;
+}
+
+.header-logo {
+    max-width: 45px;
+    /* padding: 10px 0 10px 16px; */
+    float: left;
+}
+
+img {
+    max-width: 100%;
+}
+
+.sn-name {
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    float: left;
+}
+
+.sn-name:hover {
+    color: blue;
+    font-weight: bolder;
+}
+
+.nav-item {
+    float: right;
+    margin-right: 16px;
+}
+
+.butt {
+    padding: 10px;
+    background: black;
+    color: white;
+}
+
+.butt:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+
+@media(max-width: 1000px) { 
+    .search-bar {
+        width: 20vw;
+        margin: 0;
+        display: none;
+    }
+    
+    .nav-item {
+        display: none;
+    }
+
+    .butt {
+        display: none;
+    }
 }
