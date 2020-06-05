@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/murlock.ico"" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="../css/styles.css" >
+    <link rel="stylesheet" type="text/css" href="../css/forms.css">
     <!--<link rel="stylesheet" type="text/css" href="css/fontello.css">-->
     <title>Log In</title>
 </head>
@@ -15,9 +16,8 @@
                 <img src="../img/murlock.ico" alt="">
             </div> 
             
-            <div class="nav-item butt">Sign Up</div>
+            <div class="nav-item butt"><a href="login.html">Sign In</a></div>
             
-            <input class="search-bar" type="search" name="" id="">
             
             <div class="sn-name">Murky</div>
 
@@ -26,11 +26,30 @@
                 <img src="../img/menu.png">       
             </label>
             <div class="menu">
-                <a href ="">Sing Up </a>
+                <a href ="login.html">Sign In</a>
             </div>              
         </nav>  
     </header>
     <section>
+        <form id="formulario_registro">
+
+            <h2>Sign Up</h2>
+            <input type="text" id="user" placeholder="Digite su Usuario" required>
+            <input type="password" id="pass1" placeholder="Digite su contraseña" required>
+            <input type="password" id="pass2" placeholder="Confirme Contraseña" required>
+            <input type="email" id="email" placeholder="Diigite su correo"required>
+            <input type="date" id="date" placeholder="Digite fecha de nacimiento" required>
+            
+            <input type="submit" value="Sign up" >
+        </form>
     </section>
+
+    <script src="../src/register.js">
+
+    </script>
+
+    
+
+
 </body>
 </html>
